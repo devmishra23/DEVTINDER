@@ -3,7 +3,7 @@ const app=express(); // Instance of express js application
 
 
 app.use((req,res) => {
-    res.send("Namaste from server")
+    res.send("Namaste from server") //Non rauting
 });
 
 // GIVING ROUTE 
