@@ -1,9 +1,10 @@
-  {
+{
   "name": "devtinder-project",
   "version": "1.0.0",
   "description": "Tinder for Develpers",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,10 +15,9 @@
   "author": "Devashish Mishra",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1" 
+    "express": "^5.2.1",
+    "ini": "^6.0.0",
+    "init": "^0.1.2",
+    "nodemon": "^3.1.14"
   }
 }
-
-
-
-
