@@ -137,32 +137,41 @@
 //  In Upper code we oberserved that we cant able to handle 2nd route so the solution of this problem is using 
 //  next();
 
+//       MIDDLEWARES IN EXPRESS JS
 
-const express=require("express");
-const app=express();
+// const express=require("express");
+// const app=express();
 
-app.use("/user",
-    (req,res,next)=>{
-    // res.send("Route handler");
-    console.log("handling routes1");
-    //res.send("Response sending back");   //it is waiting for response...It always have to be comment out because if we uncomment this it may throw an error
-    next();
+// app.use("/user",
+//     (req,res,next)=>{
+//     // res.send("Route handler");
+//     console.log("handling routes1");
+//     //res.send("Response sending back");   //it is waiting for response...It always have to be comment out because if we uncomment this it may throw an error
+//     next();
     
-},
-    (req,res,next)=>{
-    console.log("handling 2nd route");
-    //res.send("2nd route handler");
-    next();
-},
-    (req,res)=>{
-    console.log("handling 3rd route");
-    res.send("3rd route handler");
-},
-    (req,res)=>{
-    console.log("handling 4th route");
-    res.send("4th route handler");
-});
+// },
+//     (req,res,next)=>{
+//     console.log("handling 2nd route");
+//     //res.send("2nd route handler");
+//     next();
+// },
+//     (req,res)=>{
+//     console.log("handling 3rd route");
+//     res.send("3rd route handler");
+// },
+//     (req,res)=>{
+//     console.log("handling 4th route");
+//     res.send("4th route handler");
+// });
 
-app.listen(1818,()=>{
-    console.log(`server is running at http://localhost:1818`);
-})
+// app.listen(1818,()=>{
+//     console.log(`server is running at http://localhost:1818`);
+// })
+
+
+
+//  WHY MIDDLEWARES ARE IMPORTANT IN EXPRESS JS
+
+// Middleware is like a middle helper between the user request and the server response.
+// It checks or modifies things before the final answer is sent.
+
